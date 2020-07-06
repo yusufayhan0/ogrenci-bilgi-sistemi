@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A44A7DD5-9323-4CBA-B6E0-7AC58A13D2A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>danisman</RootNamespace>
+    <AssemblyName>danisman</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anatablo.cs" />
+    <Compile Include="danisman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danisman_ders_getir.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>danisman_ders_getir.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="danisman_ogrenci_detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danisman_ogrenci_detay.Designer.cs">
+      <DependentUpon>danisman_ogrenci_detay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danisman_ogrenci_getir.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>danisman_ogrenci_getir.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="danisman_ogrenci_transcript.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>danisman_ogrenci_transcript.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>danisman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrencidetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrencidetay.Designer.cs">
+      <DependentUpon>ogrencidetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmen.Designer.cs">
+      <DependentUpon>ogretmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmen_ders_getir.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogretmen_ders_getir.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmen_ogrenci_getir.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogretmen_ogrenci_getir.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="transcript.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>transcript.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="danisman.resx">
+      <DependentUpon>danisman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danisman_ogrenci_detay.resx">
+      <DependentUpon>danisman_ogrenci_detay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrencidetay.resx">
+      <DependentUpon>ogrencidetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmen.resx">
+      <DependentUpon>ogretmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="danisman_ders_getir.xsc">
+      <DependentUpon>danisman_ders_getir.xsd</DependentUpon>
+    </None>
+    <None Include="danisman_ders_getir.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>danisman_ders_getir.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="danisman_ders_getir.xss">
+      <DependentUpon>danisman_ders_getir.xsd</DependentUpon>
+    </None>
+    <None Include="danisman_ogrenci_getir.xsc">
+      <DependentUpon>danisman_ogrenci_getir.xsd</DependentUpon>
+    </None>
+    <None Include="danisman_ogrenci_getir.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>danisman_ogrenci_getir.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="danisman_ogrenci_getir.xss">
+      <DependentUpon>danisman_ogrenci_getir.xsd</DependentUpon>
+    </None>
+    <None Include="danisman_ogrenci_transcript.xsc">
+      <DependentUpon>danisman_ogrenci_transcript.xsd</DependentUpon>
+    </None>
+    <None Include="danisman_ogrenci_transcript.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>danisman_ogrenci_transcript.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="danisman_ogrenci_transcript.xss">
+      <DependentUpon>danisman_ogrenci_transcript.xsd</DependentUpon>
+    </None>
+    <None Include="ogretmen_ders_getir.xsc">
+      <DependentUpon>ogretmen_ders_getir.xsd</DependentUpon>
+    </None>
+    <None Include="ogretmen_ders_getir.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogretmen_ders_getir.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogretmen_ders_getir.xss">
+      <DependentUpon>ogretmen_ders_getir.xsd</DependentUpon>
+    </None>
+    <None Include="ogretmen_ogrenci_getir.xsc">
+      <DependentUpon>ogretmen_ogrenci_getir.xsd</DependentUpon>
+    </None>
+    <None Include="ogretmen_ogrenci_getir.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogretmen_ogrenci_getir.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogretmen_ogrenci_getir.xss">
+      <DependentUpon>ogretmen_ogrenci_getir.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="transcript.xsc">
+      <DependentUpon>transcript.xsd</DependentUpon>
+    </None>
+    <None Include="transcript.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>transcript.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="transcript.xss">
+      <DependentUpon>transcript.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
